@@ -1,0 +1,20 @@
+ 
+<div class="container">
+    <h2>Github Followers</h2>
+    <p>Remote Repositories:</p>
+    <div class="card" style="width:400px" *ngIf="data">
+      <img class="card-img-top" src="{{data.avatar_url}}" alt="Card image" style="margin-left:auto;margin-right:auto ;
+        width:200px;border-radius:15px ">
+      <div class="card-body">
+        <h4 class="card-title">{{data.login}}</h4>
+         <h4 class="card-title">{{data.location}}</h4> 
+        <p class="card-text"><a href="{{data.html_url}}">{{data.html_url}}</a></p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+</div>
+<!-- <ul >
+<li *ngIf="data">
+ Login Name {{data.login}}<br>
+ location{{data.location}}
+</li>
+</ul> -->
